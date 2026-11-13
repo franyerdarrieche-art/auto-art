@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APEX Detailing Studio | Autolavado Premium & Estética Automotriz</title>
+    <!-- Enlace obligatorio al CSS de Bootstrap 5 vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- 1. BARRA DE NAVEGACIÓN (NAVBAR) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container">
+            <!-- Nombre o logotipo de la marca -->
+            <a class="navbar-brand fw-bold text-uppercase tracking-wider" href="#">
+                <span class="text-warning">APEX</span> Detailing
+            </a>
+            
+            <!-- Botón hamburguesa funcional para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Enlaces y botón modal -->
+            <div class="collapse navbar-collapse" id="navbarContenido">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#garantia">Nuestra Garantía</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ubicacion">Ubicación</a>
+                    </li>
+                </ul>
+                <!-- Botón configurado para abrir el Modal de Acción/Formulario -->
+                <div class="d-flex">
+                    <button type="button" class="btn btn-warning fw-semibold text-dark px-4" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                        Agendar Cita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. SECCIÓN HERO (BANNER PRINCIPAL CON CONTAINER-FLUID) -->
+    <header id="inicio" class="container-fluid bg-dark text-white py-5 border-bottom border-warning border-3">
+        <div class="container py-5 text-center">
+            <span class="badge bg-warning text-dark text-uppercase fw-bold mb-3 px-3 py-2">Estética Automotriz de Alta Gama</span>
+            <h1 class="display-4 fw-bold mb-3">El Brillo de Agencia que tu Vehículo Merece</h1>
+            <p class="lead text-secondary col-lg-8 mx-auto mb-4">
+                Especialistas en lavado artesanal libre de micro-rayones, descontaminación de pintura, detallado interior profundo y recubrimientos cerámicos de grado profesional.
+            </p>
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-warning btn-lg px-4 fw-bold text-dark" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                    Reservar Turno VIP
+                </button>
+                <a href="#servicios" class="btn btn-outline-light btn-lg px-4">
+                    Explorar Paquetes
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL (CONTAINER ESTÁNDAR CENTRADO) -->
+    <main class="container my-5">
+
+        <!-- Encabezado de la sección de servicios -->
+        <section id="servicios" class="pt-3">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase">Nuestros Paquetes Exclusivos</h2>
+                <p class="text-muted">Seleccionamos los mejores productos biodegradables y con pH neutro del mercado internacional.</p>
+                <hr class="w-25 mx-auto border-warning border-2 opacity-100">
+            </div>
+
+            <!-- 3. SISTEMA DE REJILLA (GRID SYSTEM: col-12, col-md-6, col-lg-3) -->
+            <div class="row g-4">
+                
+                <!-- Tarjeta 1 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-dark text-white text-center py-3">
+                            <span class="badge bg-secondary mb-1">Nivel 1</span>
+                            <h5 class="card-title mb-0 fw-bold">Lavado Signature</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="text-center fw-bold text-dark my-3">$25 <small class="text-muted fs-6 fw-normal">/ sesión</small></h3>
+                            <p class="card-text text-muted small">
+                                Lavado exterior mediante técnica de dos baldes con espuma activa de pH neutro, limpieza profunda de rines y aspirado detallado de cabina.
+                            </p>
+                            <ul class="list-unstyled small text-secondary mb-4">
+                                <li>✓ Secado con microfibra ultra suave</li>
+                                <li>✓ Acondicionado de neumáticos</li>
+                                <li>✓ Limpieza de cristales sin vetas</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-dark mt-auto w-100 fw-semibold" data-bs-toggle="modal" data-bs-target="#modalDetallesServicio1">
+                                Ver Detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-dark text-white text-center py-3">
+                            <span class="badge bg-info text-dark mb-1">Nivel 2</span>
+                            <h5 class="card-title mb-0 fw-bold">Detallado Interior</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="text-center fw-bold text-dark my-3">$65 <small class="text-muted fs-6 fw-normal">/ sesión</small></h3>
+                            <p class="card-text text-muted small">
+                                Restauración completa del habitáculo. Sanitización con vapor seco, extracción de manchas en tapicería y nutrición de cueros naturales.
+                            </p>
+                            <ul class="list-unstyled small text-secondary mb-4">
+                                <li>✓ Desinfección con vapor a 160°C</li>
+                                <li>✓ Protección UV para plásticos</li>
+                                <li>✓ Eliminación de olores con ozono</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-dark mt-auto w-100 fw-semibold" data-bs-toggle="modal" data-bs-target="#modalDetallesServicio2">
+                                Ver Detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 (Destacada) -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow border-warning border-2">
+                        <div class="card-header bg-warning text-dark text-center py-3">
+                            <span class="badge bg-dark text-warning mb-1">Más Solicitado</span>
+                            <h5 class="card-title mb-0 fw-bold">Descontaminado & Cera</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="text-center fw-bold text-dark my-3">$95 <small class="text-muted fs-6 fw-normal">/ sesión</small></h3>
+                            <p class="card-text text-muted small">
+                                Eliminación de impurezas incrustadas mediante barra de arcilla (Clay Bar) y aplicación de sellador sintético de carnauba de alto brillo.
+                            </p>
+                            <ul class="list-unstyled small text-secondary mb-4">
+                                <li>✓ Remoción de brea y contaminación</li>
+                                <li>✓ Efecto hidrofóbico por 4 meses</li>
+                                <li>✓ Incluye Lavado Signature</li>
+                            </ul>
+                            <button type="button" class="btn btn-warning mt-auto w-100 fw-bold text-dark" data-bs-toggle="modal" data-bs-target="#modalDetallesServicio3">
+                                Ver Detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-header bg-dark text-white text-center py-3">
+                            <span class="badge bg-danger mb-1">Máxima Protección</span>
+                            <h5 class="card-title mb-0 fw-bold">Tratamiento Cerámico</h5>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="text-center fw-bold text-dark my-3">$280 <small class="text-muted fs-6 fw-normal">/ paquete</small></h3>
+                            <p class="card-text text-muted small">
+                                Corrección de barniz en 2 etapas para eliminar hologramas y aplicación de recubrimiento cerámico 9H con garantía de protección por 3 años.
+                            </p>
+                            <ul class="list-unstyled small text-secondary mb-4">
+                                <li>✓ Pulido de corrección de pintura</li>
+                                <li>✓ Dureza 9H contra agentes químicos</li>
+                                <li>✓ Brillo espejo extremo permanente</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-dark mt-auto w-100 fw-semibold" data-bs-toggle="modal" data-bs-target="#modalDetallesServicio4">
+                                Ver Detalles
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN NUESTRA GARANTÍA (AMPLIADA Y PROFESIONAL) -->
+        <section id="garantia" class="mt-5 pt-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase">Nuestra Garantía APEX</h2>
+                <p class="text-muted">Estándares rigurosos diseñados para proteger la inversión de tu vehículo.</p>
+                <hr class="w-25 mx-auto border-warning border-2 opacity-100">
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-150 border-0 shadow-sm p-3 text-center bg-white">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-dark rounded-circle p-3 fs-4">🛡️</span>
+                            </div>
+                            <h4 class="fw-bold fs-5">Técnicos Certificados</h4>
+                            <p class="text-muted small mb-0">
+                                Nuestro personal cuenta con certificación internacional en manejo de pinturas delicadas, corrección de barniz y aplicación de cerámicos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-150 border-0 shadow-sm p-3 text-center bg-white">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-warning text-dark rounded-circle p-3 fs-4">💧</span>
+                            </div>
+                            <h4 class="fw-bold fs-5">Productos pH Neutro</h4>
+                            <p class="text-muted small mb-0">
+                                Cero químicos ácidos o detergentes agresivos de lavadero convencional. Utilizamos exclusivamente insumos biodegradables de marcas líderes mundiales.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-150 border-0 shadow-sm p-3 text-center bg-white">
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="badge bg-dark rounded-circle p-3 fs-4">✨</span>
+                            </div>
+                            <h4 class="fw-bold fs-5">Inspección con Luz LED</h4>
+                            <p class="text-muted small mb-0">
+                                Cada vehículo es evaluado bajo túnel de luz especializada antes de la entrega para garantizar una corrección y acabado 100% libre de hologramas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner secundario de llamada a la acción en garantía -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm border mt-4">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-8">
+                        <h3 class="fw-bold mb-2">¿Dudas sobre el estado de la pintura de tu auto?</h3>
+                        <p class="text-muted mb-0">
+                            Acércate a nuestro estudio para una evaluación microscópica de la laca sin costo ni compromiso alguno. Te asesoramos sobre el tratamiento ideal.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-4 text-lg-end">
+                        <button type="button" class="btn btn-dark btn-lg px-4" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                            Agendar Evaluación
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN UBICACIÓN Y CONTACTO (PROFESIONAL Y DETALLADA) -->
+        <section id="ubicacion" class="mt-5 pt-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-uppercase">Visita Nuestro Estudio</h2>
+                <p class="text-muted">Instalaciones climatizadas y seguras diseñadas para el cuidado automotriz.</p>
+                <hr class="w-25 mx-auto border-warning border-2 opacity-100">
+            </div>
+
+            <div class="row g-4 align-items-stretch">
+                <!-- Columna de Datos de Ubicación y Horarios -->
+                <div class="col-12 col-lg-6">
+                    <div class="card border-0 shadow-sm h-100 p-4 bg-white">
+                        <h4 class="fw-bold mb-3 text-dark"><span class="text-warning">APEX</span> Detailing Studio</h4>
+                        <p class="text-muted small mb-4">
+                            Contamos con un espacio cerrado, circuito de seguridad 24/7 y sala de espera VIP con Wi-Fi, café y estación de trabajo para que disfrutes mientras cuidamos tu vehículo.
+                        </p>
+                        <ul class="list-unstyled text-secondary small mb-4">
+                            <li class="mb-3"><strong>📍 Dirección:</strong> Av. Bolívar Norte, Sector El Viñedo, Local #45.</li>
+                            <li class="mb-3"><strong>📞 Teléfono / WhatsApp:</strong> +58 (414) 123-4567</li>
+                            <li class="mb-3"><strong>✉️ Correo Electrónico:</strong> contacto@apexdetailing.com</li>
+                            <li class="mb-3"><strong>⏰ Horario de Atención:</strong> Lunes a Sábado de 8:00 AM a 6:00 PM</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <button type="button" class="btn btn-dark w-100 fw-semibold" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                                Reservar Cita en Línea
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna de Mapa Ficticio / Tarjeta Informativa de Acceso -->
+                <div class="col-12 col-lg-6">
+                    <div class="card border-0 shadow-sm h-100 bg-dark text-white p-4 d-flex flex-column justify-content-center text-center">
+                        <div class="card-body my-auto">
+                            <span class="display-4 mb-3 d-block">🗺️</span>
+                            <h3 class="fw-bold text-warning mb-2">Fácil Acceso y Estacionamiento</h3>
+                            <p class="text-secondary small mb-4 px-lg-3">
+                                Ubicados en una zona comercial céntrica y de fácil acceso vehicular. Contamos con estacionamiento privado interno para la recepción y entrega segura de automóviles de alta gama.
+                            </p>
+                            <span class="badge bg-warning text-dark px-3 py-2 fw-bold text-uppercase">¡Te esperamos!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-dark text-white py-4 mt-5 border-top border-secondary">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <h5 class="fw-bold text-uppercase mb-1"><span class="text-warning">APEX</span> Detailing Studio</h5>
+                    <p class="small text-secondary mb-0">Estética Automotriz Profesional • Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <span class="small text-secondary">&copy; 2026 APEX Detailing Studio.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================================================= -->
+    <!-- 4. VENTANAS EMERGENTES (MODALES)                                          -->
+    <!-- ========================================================================= -->
+
+    <!-- MODAL DE ACCIÓN / FORMULARIO (Activado desde Navbar, Hero y Banner) -->
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="modalReservaLabel">Agendar Cita de Detallado</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombreCliente" class="form-label fw-semibold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombreCliente" placeholder="Ej. Carlos Mendoza" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoCliente" class="form-label fw-semibold">Teléfono / WhatsApp</label>
+                            <input type="tel" class="form-control" id="telefonoCliente" placeholder="Ej. 0414-1234567" required>
+                        </div>
+                        <div class="row g-2 mb-3">
+                            <div class="col-md-6">
+                                <label for="tipoVehiculo" class="form-label fw-semibold">Tipo de Vehículo</label>
+                                <select class="form-select" id="tipoVehiculo">
+                                    <option selected>Sedán / Coupé</option>
+                                    <option value="suv">SUV / Camioneta</option>
+                                    <option value="pickup">Pick-Up / 4x4</option>
+                                    <option value="deportivo">Deportivo / Alta Gama</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="servicioElegido" class="form-label fw-semibold">Paquete Deseado</label>
+                                <select class="form-select" id="servicioElegido">
+                                    <option value="1">Lavado Signature ($25)</option>
+                                    <option value="2">Detallado Interior ($65)</option>
+                                    <option value="3" selected>Descontaminado & Cera ($95)</option>
+                                    <option value="4">Tratamiento Cerámico ($280)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaCita" class="form-label fw-semibold">Fecha Preferida</label>
+                            <input type="date" class="form-control" id="fechaCita" required>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-warning fw-bold text-dark" data-bs-dismiss="modal">Confirmar Reserva</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODALES DE DETALLES (Activados desde las tarjetas del Grid) -->
+    
+    <!-- Modal Detalles Servicio 1 -->
+    <div class="modal fade" id="modalDetallesServicio1" tabindex="-1" aria-labelledby="modalDetalles1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="modalDetalles1Label">Detalles: Lavado Signature ($25)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-semibold text-dark">Tiempo estimado de ejecución: 1 hora y 15 minutos.</p>
+                    <p class="text-muted small">Ideal para el mantenimiento semanal de vehículos que buscan conservar el brillo original sin generar marcas circulares (swirls) en la pintura.</p>
+                    <h6 class="fw-bold mt-3">Proceso incluido:</h6>
+                    <ul class="small text-secondary">
+                        <li>Pre-lavado con espuma activa (Snow Foam) para encapsular y retirar polvo sin fricción.</li>
+                        <li>Limpieza profunda de cañones de rines, tuercas y pasos de rueda con brochas de cerdas suaves.</li>
+                        <li>Lavado manual con guante de lana de cordero y método de dos cubos con rejilla atrapa-partículas.</li>
+                        <li>Aspirado de alfombras, asientos y maletero, más limpieza de tablero con microfibra antiestática.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning fw-bold text-dark" data-bs-toggle="modal" data-bs-target="#modalReserva">Agendar este Servicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalles Servicio 2 -->
+    <div class="modal fade" id="modalDetallesServicio2" tabindex="-1" aria-labelledby="modalDetalles2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark text-white">
+                    <h5 class="modal-title fw-bold" id="modalDetalles2Label">Detalles: Detallado Interior ($65)</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-semibold text-dark">Tiempo estimado de ejecución: 3 a 4 horas.</p>
+                    <p class="text-muted small">Higienización profunda diseñada para devolver el aspecto y aroma de fábrica al interior de tu automóvil, eliminando ácaros, bacterias y manchas difíciles.</p>
+                    <h6 class="fw-bold mt-3">Proceso incluido:</h6>
+                    <ul class="small text-secondary">
+                        <li>Inyección y extracción en asientos de tela, techo y alfombras.</li>
+                        <li>Limpieza e hidratación de tapicería de cuero con acabado mate natural (sin sensación grasosa).</li>
+                        <li>Desinfección de ductos de aire acondicionado mediante generador de vapor seco.</li>
+                        <li>Tratamiento de ozono para neutralizar olores de tabaco, humedad o mascotas.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning fw-bold text-dark" data-bs-toggle="modal" data-bs-target="#modalReserva">Agendar este Servicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalles Servicio 3 -->
+    <div class="modal fade" id="modalDetallesServicio3" tabindex="-1" aria-labelledby="modalDetalles3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title fw-bold" id="modalDetalles3Label">Detalles: Descontaminado & Cera ($95)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-semibold text-dark">Tiempo estimado de ejecución: 3 horas.</p>
+                    <p class="text-muted small">Nuestro paquete estrella. Devuelve suavidad extrema al tacto de la carrocería y crea una barrera repelente al agua, lluvia ácida y rayos UV.</p>
+                    <h6 class="fw-bold mt-3">Proceso incluido:</h6>
+                    <ul class="small text-secondary">
+                        <li>Incluye todos los pasos del <strong>Lavado Signature</strong>.</li>
+                        <li>Descontaminación férrica de rines y carrocería.</li>
+                        <li>Paso completo de Clay Bar (arcilla descontaminante) para dejar el barniz liso como un cristal.</li>
+                        <li>Aplicación de sellador sintético híbrido con cera de Carnauba brasileña grado T1.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-warning fw-bold text-dark" data-bs-toggle="modal" data-bs-target="#modalReserva">Agendar este Servicio</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Detalles Servicio 4 -->
+    <div class="modal fade" id="modalDetallesServicio4" tabindex="-1" aria-labelledby="modalDetalles4Label" aria-
